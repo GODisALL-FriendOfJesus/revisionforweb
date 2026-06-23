@@ -1,4 +1,4 @@
-### 1. Branching & The Golden Rule
+### 1. Branching & The Golden Rule1
 ```bash
 Initialized empty Git repository in C:/Users/Malaika/revisionforweb/.git/
 PS C:\Users\Malaika\revisionforweb> git checkout -b feature/docs dev from it
@@ -74,5 +74,34 @@ PS C:\Users\Malaika\revisionforweb> git checkout dev
 Switched to branch 'dev'
 PS C:\Users\Malaika\revisionforweb>  
 
+
+```
+### 2. Decoding Merge Conflicts
+```bash 
+
+
+PS C:\Users\Malaika\revisionforweb> git add config.txtcise solving conflicts"
+[dev 30b128f] GODisALL start of 2exercise solving conflicts
+ create mode 100644 config.txt
+PS C:\Users\Malaika\revisionforweb> git checkout -b feature/conflict
+Switched to a new branch 'feature/conflict'
+PS C:\Users\Malaika\revisionforweb> git add config.txt
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL start of 2exer
+[feature/conflict 1f68a5f] GODisALL start of 2exercise solving conflicts
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+M       README.md
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 1 commit.
+PS C:\Users\Malaika\revisionforweb> git add config.txtcise solving conflicts"
+[dev 062f06e] GODisALL start of 2exercise solving conflicts
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Malaika\revisionforweb> git merge feature/conflict
+Auto-merging config.txt
+CONFLICT (content): Merge conflict in config.txt
+Automatic merge failed; fix conflicts and then commit the result.
+PS C:\Users\Malaika\revisionforweb> git add config.txt
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL start of 2exercise well solved conflicts"
+[dev 1c90335] GODisALL start of 2exercise well solved conflicts
+PS C:\Users\Malaika\revisionforweb> 
 
 ```
