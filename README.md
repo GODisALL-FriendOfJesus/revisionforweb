@@ -79,7 +79,6 @@ PS C:\Users\Malaika\revisionforweb>
 ### 2. Decoding Merge Conflicts
 ```bash 
 
-
 PS C:\Users\Malaika\revisionforweb> git add config.txtcise solving conflicts"
 [dev 30b128f] GODisALL start of 2exercise solving conflicts
  create mode 100644 config.txt
@@ -93,15 +92,26 @@ M       README.md
 Switched to branch 'dev'
 Your branch is ahead of 'origin/dev' by 1 commit.
 PS C:\Users\Malaika\revisionforweb> git add config.txtcise solving conflicts"
-[dev 062f06e] GODisALL start of 2exercise solving conflicts
- 1 file changed, 1 insertion(+), 1 deletion(-)
 PS C:\Users\Malaika\revisionforweb> git merge feature/conflict
 Auto-merging config.txt
-CONFLICT (content): Merge conflict in config.txt
 Automatic merge failed; fix conflicts and then commit the result.
 PS C:\Users\Malaika\revisionforweb> git add config.txt
 PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL start of 2exercise well solved conflicts"
 [dev 1c90335] GODisALL start of 2exercise well solved conflicts
+PS C:\Users\Malaika\revisionforweb> git add README.md
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL"
+[dev b92c8c9] GODisALL
+ 1 file changed, 30 insertions(+), 1 deletion(-)
+PS C:\Users\Malaika\revisionforweb> git push
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (11/11), done.
+Writing objects: 100% (15/15), 1.82 KiB | 206.00 KiB/s, done.
+Total 15 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/GODisALL-FriendOfJesus/revisionforweb.git
+   f5f91ad..b92c8c9  dev -> dev
 PS C:\Users\Malaika\revisionforweb> 
 
 ```
