@@ -115,3 +115,175 @@ To https://github.com/GODisALL-FriendOfJesus/revisionforweb.git
 PS C:\Users\Malaika\revisionforweb> 
 
 ```
+### 3. Pull Requests & The Art of Review
+```bash 
+... subquestions were done in Website of git 
+
+
+```
+### 4
+
+```bash
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 514 bytes | 102.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/GODisALL-FriendOfJesus/revisionforweb.git
+   f94c0dd..e0fe3be  dev -> dev
+PS C:\Users\Malaika\revisionforweb> git add .
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL (third exercises are done)"
+[dev 4ec9c8f] GODisALL (third exercises are done)
+ 1 file changed, 6 insertions(+)
+PS C:\Users\Malaika\revisionforweb> git push 
+Delta compression using up to 4 threads
+Writing objects: 100% (3/3), 440 bytes | 36.00 KiB/s, done.
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/GODisALL-FriendOfJesus/revisionforweb.git
+   e0fe3be..4ec9c8f  dev -> devbase-test
+Switched to a new branch 'feature/rebase-test'
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL   aree well created to learn rebase
+ 2 files changed, 2 insertions(+)
+ create mode 100644 rebasefile1.txt
+ create mode 100644 rebasefile2.txt
+PS C:\Users\Malaika\revisionforweb> git checkout dev
+Your branch is up to date with 'origin/dev'.
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL   
+both file1 and file2 aree well created to learn rebase on dev"
+[dev e3a76be] GODisALL   both file1 and file2 aree well created to learn rebase on dev
+ 1 file changed, 1 insertion(+)
+ create mode 100644 teammatework.txt
+PS C:\Users\Malaika\revisionforweb> git checkout  feature/rebase-test                                                       Switched to branch 'feature/rebase-test'
+PS C:\Users\Malaika\revisionforweb> git rebase dev
+Successfully rebased and updated refs/heads/feature/rebase-test.
+PS C:\Users\Malaika\revisionforweb> git log --oneline
+b941da8 (HEAD -> feature/rebase-test) GODisALL   both file1 and file2 aree well created to learn rebase
+e3a76be (dev) GODisALL   both file1 and file2 aree well created to learn rebase on dev
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+:
+b941da8 (HEAD -> feature/rebase-test) GODisALL   both file1 and file2 aree well created to learn rebase
+e3a76be (dev) GODisALL   both file1 and file2 aree well created to learn rebase on dev
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+(END)
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+(END)
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+...skipping...
+4ec9c8f (origin/dev) GODisALL (third exercises are done)
+e0fe3be GODisALL making conflict on dev again
+a97107e GODisALL making confrict on dev
+f94c0dd GODisALL second exercise is well done
+b92c8c9 GODisALL
+1c90335 GODisALL start of 2exercise well solved conflicts
+062f06e GODisALL start of 2exercise solving conflicts
+1f68a5f GODisALL start of 2exercise solving conflicts
+30b128f GODisALL start of 2exercise solving conflicts
+f5f91ad GODisALL second changes are created
+f861302 GODisALL first commit start exercises
+```
