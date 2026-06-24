@@ -121,3 +121,30 @@ PS C:\Users\Malaika\revisionforweb>
 
 
 ```
+### 5 Hotfixes (Fires in Production)
+```bash
+PS C:\Users\Malaika\revisionforweb> git checkout main
+PS C:\Users\Malaika\revisionforweb> git checkout -b mai
+Switched to a new branch 'main'
+PS C:\Users\Malaika\revisionforweb> git add app.js
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL '(app.js file is created)'"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Malaika\revisionforweb> git checkout -b hotfix/zero-fix main
+Switched to a new branch 'hotfix/zero-fix'
+Nothing specified, nothing added.addEmptyPathspec false"
+PS C:\Users\Malaika\revisionforweb> git add app.js
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL '(app.js file is created on hotfix)'"ated on hotfix)'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Malaika\revisionforweb> git checkout mainro-fix
+Updating ba3c223..802596e
+Fast-forward
+ app.js | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Malaika\revisionforweb> git checkout dev
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 1 commit.
+  (use "git push" to publish your local commits)
+PS C:\Users\Malaika\revisionforweb> git merge hotfix/zero
+merge: hotfix/zero - not something we can merge
+PS C:\Users\Malaika\revisionforweb> 
+```
