@@ -313,5 +313,110 @@ Your branch is ahead of 'origin/dev' by 1 commit.
   (use "git push" to publish your local commits)
 PS C:\Users\Malaika\revisionforweb> git merge hotfix/zero
 merge: hotfix/zero - not something we can merge
-PS C:\Users\Malaika\revisionforweb> 
-```
+### 6. .gitignore & The "Oops" File
+```bash
+PS C:\Users\Malaika\revisionforweb> git checkout main
+PS C:\Users\Malaika\revisionforweb> git checkout -b mai
+Switched to a new branch 'main'
+PS C:\Users\Malaika\revisionforweb> git add app.js
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL '(app.js file is created)'"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Malaika\revisionforweb> git checkout -b hotfix/zero-fix main
+Switched to a new branch 'hotfix/zero-fix'
+Nothing specified, nothing added.addEmptyPathspec false"
+PS C:\Users\Malaika\revisionforweb> git add app.js
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL '(app.js file is created on hotfix)'"ated on hotfix)'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Malaika\revisionforweb> git checkout mainro-fix
+Fast-forward
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 1 commit.
+PS C:\Users\Malaika\revisionforweb> git merge hotfix/zero
+merge: hotfix/zero - not something we can merge
+PS C:\Users\Malaika\revisionforweb> git add README>md
+fatal: pathspec 'README>md' did not match any files
+PS C:\Users\Malaika\revisionforweb> git add README.md
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL 'exercise five 5 well done '"        
+[dev bd3f455] GODisALL 'exercise five 5 well done '
+ 1 file changed, 27 insertions(+)
+PS C:\Users\Malaika\revisionforweb> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 725 bytes | 60.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 rweb.git
+* dev
+  feature/docs
+  feature/rebase-test
+  hotfix/zero-fix
+  main
+Switched to a new branch 'feature/test'
+PS C:\Users\Malaika\revisionforweb> git add fileignor.t
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL  '(file to check for gitignore)'"tignore)'
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fileignor.txt
+PS C:\Users\Malaika\revisionforweb> git rm --cached lar
+fatal: pathspec 'large.bin' did not match any files
+PS C:\Users\Malaika\revisionforweb> git rm --cached fileignor.txt
+rm 'fileignor.txt'
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL   'fileforbin is removed'"
+[feature/test a1a9d36] GODisALL   'fileforbin is removed'
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 fileignor.txt
+ ```
+
+### 6. .gitignore & The "Oops" File
+```bash
+PS C:\Users\Malaika\revisionforweb> git checkout main
+PS C:\Users\Malaika\revisionforweb> git checkout -b mai
+Switched to a new branch 'main'
+PS C:\Users\Malaika\revisionforweb> git add app.js
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL '(app.js file is created)'"
+ 1 file changed, 1 insertion(+)
+PS C:\Users\Malaika\revisionforweb> git checkout -b hotfix/zero-fix main
+Switched to a new branch 'hotfix/zero-fix'
+Nothing specified, nothing added.addEmptyPathspec false"
+PS C:\Users\Malaika\revisionforweb> git add app.js
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL '(app.js file is created on hotfix)'"ated on hotfix)'
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\Malaika\revisionforweb> git checkout mainro-fix
+Fast-forward
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+Switched to branch 'dev'
+Your branch is ahead of 'origin/dev' by 1 commit.
+PS C:\Users\Malaika\revisionforweb> git merge hotfix/zero
+merge: hotfix/zero - not something we can merge
+PS C:\Users\Malaika\revisionforweb> git add README>md
+fatal: pathspec 'README>md' did not match any files
+PS C:\Users\Malaika\revisionforweb> git add README.md
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL 'exercise five 5 well done '"        
+[dev bd3f455] GODisALL 'exercise five 5 well done '
+ 1 file changed, 27 insertions(+)
+PS C:\Users\Malaika\revisionforweb> git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 725 bytes | 60.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 rweb.git
+* dev
+  feature/docs
+  feature/rebase-test
+  hotfix/zero-fix
+  main
+Switched to a new branch 'feature/test'
+PS C:\Users\Malaika\revisionforweb> git add fileignor.t
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL  '(file to check for gitignore)'"tignore)'
+ 1 file changed, 1 insertion(+)
+ create mode 100644 fileignor.txt
+PS C:\Users\Malaika\revisionforweb> git rm --cached lar
+fatal: pathspec 'large.bin' did not match any files
+PS C:\Users\Malaika\revisionforweb> git rm --cached fileignor.txt
+rm 'fileignor.txt'
+PS C:\Users\Malaika\revisionforweb> git commit -m "GODisALL   'fileforbin is removed'"
+[feature/test a1a9d36] GODisALL   'fileforbin is removed'
+ 1 file changed, 1 deletion(-)
+ delete mode 100644 fileignor.txt
+ ```
