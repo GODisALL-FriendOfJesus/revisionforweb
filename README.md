@@ -115,3 +115,9 @@ To https://github.com/GODisALL-FriendOfJesus/revisionforweb.git
 PS C:\Users\Malaika\revisionforweb> 
 
 ```
+### 3. Pull Requests & The Art of Review
+```bash 
+... subquestions were done in Website of git 
+
+
+```
