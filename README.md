@@ -121,7 +121,7 @@ PS C:\Users\Malaika\revisionforweb>
 
 
 ```
-### 4
+### 4. Rebasing vs. Merging (The Tidy vs. The Truth)
 
 ```bash
 Enumerating objects: 6, done.
